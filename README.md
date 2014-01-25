@@ -11,8 +11,11 @@ You need to have boost at least 1.48 version and cmake, of course.
 1. Checkout this repo
 2. Go into the project folder
 3. Make the following commands:
+
 > cmake .
+
 > make
+
 That's it.
 
 ## Stuffing file and folders
