@@ -19,7 +19,7 @@ That's it.
 1. Build the project
 2. Run:
 
-> ./simple_tar path_to_file_or_directory_to_stuff> [-o output_file_path]
+> ./simple_tar path_to_file_or_directory_to_stuff [-o output_file_path]
 
 -o is optional, the default value is "output.arch".
 
