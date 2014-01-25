@@ -18,13 +18,19 @@ That's it.
 ## Stuffing file and folders
 1. Build the project
 2. Run:
+
 > ./simple_tar <path to file or directory to stuff> [-o <output file path>]
+
 -o is optional, the default value is "output.arch".
+
 **Note:** output file must not exist
 
 ## Extracting files and folders
 1. Build the project.
 2. Run:
+
 > ./simple_tar -x <path to archive> [-o <output directory path>]
+
 -o is optional, the default value is "."
+
 **Note:** output directory may not exist. In this case it will be creatd automatically 

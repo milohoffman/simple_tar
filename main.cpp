@@ -12,7 +12,7 @@
 int main(int argc, char ** argv) {
     SimpleTar::ProgramOptions options;
 
-//    try {
+    try {
 
         if (!parseOptions(argc, argv, options)) {
             options.printHelp();
@@ -29,10 +29,10 @@ int main(int argc, char ** argv) {
         else
             SimpleTar::extract(options.getOperationPath(), options.getOutputPath());
 
-//    } catch (std::exception& ex) {
-//        std::cerr << "Error: " << ex.what() << std::endl;
-//        return 1;
-//    }
+    } catch (std::exception& ex) {
+        std::cerr << "Error: " << ex.what() << std::endl;
+        return 1;
+    }
 
     return 0;
 }

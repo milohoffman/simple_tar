@@ -26,7 +26,6 @@ void compress(const fs::path& compress_path, const fs::path& output_path) {
     if (fs::is_regular_file(status)) {
         c.compress(fs::directory_entry(compress_path));
     } else if (fs::is_directory(status)) {
-        //TODO: path must be relative!
         std::for_each(fs::recursive_directory_iterator(compress_path), fs::recursive_directory_iterator(),
                 boost::bind(&Compressor::compress, &c, _1));
     }
